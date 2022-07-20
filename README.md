@@ -1,5 +1,10 @@
 # API-REST
 
+# SWAGGER DOCUMENTATION
+
+Pour accéder à la documentation de l'API-REST, il suffit de se rendre sur la route suivante :
+/api-docs
+
 # SEANCE 1
 
 ## QU'EST-CE QUE NODE ?
