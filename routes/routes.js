@@ -18,18 +18,18 @@ const routing = (app) => {
    *           schema:
    *             type: object
    *             properties:
-   *                      title:
-   *                         type: string
-   *                         description: Title's music
-   *                         example: Titanium
-   *                      artist:
-   *                         type: string
-   *                         description: Artist's music
-   *                         example: David Guetta
-   *                      year:
-   *                         type: integer
-   *                         description: Year's music
-   *                         example: 2011
+   *               title:
+   *                 type: string
+   *                 description: Title's music
+   *                 example: Titanium
+   *               artist:
+   *                 type: string
+   *                 description: Artist's music
+   *                 example: David Guetta
+   *               year:
+   *                 type: integer
+   *                 description: Year's music
+   *                 example: 2011
    *     responses:
    *       201:
    *         description: Create
@@ -41,22 +41,22 @@ const routing = (app) => {
    *                 data:
    *                   type: object
    *                   properties:
-   *                      id:
-   *                        type: integer
-   *                        description: The music ID.
-   *                        example: 1
-   *                      title:
-   *                         type: string
-   *                         description: Title's music
-   *                         example: Titanium
-   *                      artist:
-   *                         type: string
-   *                         description: Artist's music
-   *                         example: David Guetta
-   *                      year:
-   *                         type: integer
-   *                         description: Year's music
-   *                         example: 2011
+   *                     id:
+   *                       type: integer
+   *                       description: The music ID.
+   *                       example: 1
+   *                     title:
+   *                       type: string
+   *                       description: Title's music
+   *                       example: Titanium
+   *                     artist:
+   *                       type: string
+   *                       description: Artist's music
+   *                       example: David Guetta
+   *                     year:
+   *                       type: integer
+   *                       description: Year's music
+   *                       example: 2011
    */
   router.post("/", musics.createOne);
 
@@ -88,11 +88,11 @@ const routing = (app) => {
    *                         type: string
    *                         description: Title's music
    *                         example: Titanium
-   *                      artist:
+   *                       artist:
    *                         type: string
    *                         description: Artist's music
    *                         example: David Guetta
-   *                      year:
+   *                       year:
    *                         type: integer
    *                         description: Year's music
    *                         example: 2011
@@ -124,22 +124,22 @@ const routing = (app) => {
    *                 data:
    *                   type: object
    *                   properties:
-   *                      id:
-   *                         type: integer
-   *                         description: Unique identifier for a music
-   *                         example: 1
-   *                       title:
-   *                         type: string
-   *                         description: Title's music
-   *                         example: Titanium
-   *                      artist:
-   *                         type: string
-   *                         description: Artist's music
-   *                         example: David Guetta
-   *                      year:
-   *                         type: integer
-   *                         description: Year's music
-   *                         example: 2011
+   *                     id:
+   *                       type: integer
+   *                       description: Unique identifier for a music
+   *                       example: 1
+   *                     title:
+   *                       type: string
+   *                       description: Title's music
+   *                       example: Titanium
+   *                     artist:
+   *                       type: string
+   *                       description: Artist's music
+   *                       example: David Guetta
+   *                     year:
+   *                       type: integer
+   *                       description: Year's music
+   *                       example: 2011
    */
   router.get("/:id", musics.findOne);
 
@@ -169,22 +169,22 @@ const routing = (app) => {
    *                 data:
    *                   type: object
    *                   properties:
-   *                      id:
-   *                         type: integer
-   *                         description: Unique identifier for a music
-   *                         example: 1
-   *                       title:
-   *                         type: string
-   *                         description: Title's music
-   *                         example: Titanium
-   *                      artist:
-   *                         type: string
-   *                         description: Artist's music
-   *                         example: David Guetta
-   *                      year:
-   *                         type: integer
-   *                         description: Year's music
-   *                         example: 2011
+   *                     id:
+   *                       type: integer
+   *                       description: Unique identifier for a music
+   *                       example: 1
+   *                     title:
+   *                       type: string
+   *                       description: Title's music
+   *                       example: Titanium
+   *                     artist:
+   *                       type: string
+   *                       description: Artist's music
+   *                       example: David Guetta
+   *                     year:
+   *                       type: integer
+   *                       description: Year's music
+   *                       example: 2011
    */
 
   router.put("/:id", musics.updateOne);
@@ -215,22 +215,22 @@ const routing = (app) => {
    *                 data:
    *                   type: object
    *                   properties:
-   *                      id:
-   *                         type: integer
-   *                         description: Unique identifier for a music
-   *                         example: 1
-   *                       title:
-   *                         type: string
-   *                         description: Title's music
-   *                         example: Titanium
-   *                      artist:
-   *                         type: string
-   *                         description: Artist's music
-   *                         example: David Guetta
-   *                      year:
-   *                         type: integer
-   *                         description: Year's music
-   *                         example: 2011
+   *                     id:
+   *                       type: integer
+   *                       description: Unique identifier for a music
+   *                       example: 1
+   *                     title:
+   *                       type: string
+   *                       description: Title's music
+   *                       example: Titanium
+   *                     artist:
+   *                       type: string
+   *                       description: Artist's music
+   *                       example: David Guetta
+   *                     year:
+   *                       type: integer
+   *                       description: Year's music
+   *                       example: 2011
    */
 
   router.delete("/:id", musics.deleteOne);
