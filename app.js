@@ -1,8 +1,18 @@
 import express from "express";
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
+import bodyParser from "body-parser";
+import db from "./models/sequelize.js";
 
 const app = express();
+
+// Middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Sync database
+db.sequelize
+  .sync({ force: true })
+  .then(() => console.log("Database synced"))
 
 // definition information API
 const swaggerDefinition = {
@@ -30,7 +40,6 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-
 // Router musics
 let musicRouter = express.Router();
 
@@ -40,7 +49,7 @@ let musicRouter = express.Router();
  *   get:
  *     description: Retourne la liste des musiques
  *     responses:
- *      200:    
+ *      200:
  *        description: Liste des musiques
  */
 
