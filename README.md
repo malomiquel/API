@@ -3,7 +3,7 @@
 # SWAGGER DOCUMENTATION
 
 Pour accéder à la documentation de l'API-REST, il suffit de se rendre sur la route suivante :
-/api-docs
+/documentations
 
 # SEANCE 1
 
