@@ -2,9 +2,10 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import db from "./models/sequelize.js";
-import routing from "./routes/routes.js";
+import routingMusic from "./routes/music.routes.js";
 import swaggerSpec from "./config/swagger.config..js";
 import swaggerUi from "swagger-ui-express";
+import routingAuth from "./routes/auth.routes.js"
 
 const corsOptions = {
   origin: "http://localhost:3000",
@@ -25,7 +26,8 @@ db.sequelize
 
 app.use("/documentations", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-routing(app);
+routingMusic(app);
+routingAuth(app);
         
 app.listen(3000, () => {
   console.log("Server is running on port 3000");

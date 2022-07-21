@@ -16,7 +16,7 @@ const swaggerDefinition = {
       },
     ],
   },
-  apis: ["./routes/routes.js"],
+  apis: ["./routes/music.routes.js"],
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerDefinition);

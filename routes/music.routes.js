@@ -1,9 +1,9 @@
-import musics from "../controllers/controller.js";
+import musics from "../controllers/music.controller.js";
 import express from "express";
 
 const router = express.Router();
 
-const routing = (app) => {
+const routingMusic = (app) => {
   /**
    * @swagger
    * /musics:
@@ -237,4 +237,4 @@ const routing = (app) => {
   app.use("/musics", router);
 };
 
-export default routing;
+export default routingMusic;
